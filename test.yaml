@@ -1,6 +1,6 @@
 ---
 - name: Server Health Check
-  hosts: windows
+  hosts: 172.16.1.121
   gather_facts: True
     
   tasks:
