@@ -1,0 +1,13 @@
+---
+- name: Server Health Check
+  hosts: windows
+  gather_facts: True
+    
+  tasks:
+    - name: test task1
+      win_shell: gwmi win32_computersystem
+      register: cs
+      
+    - debug: var=cs.stdout
+    
+    
